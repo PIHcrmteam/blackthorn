@@ -1,19 +1,15 @@
-/* =============================================
-   Blackthorn Event Page Customizations
-   ============================================= */
-
-/* --- Rename "Tickets" header to "Registration" --- */
-.tickets-wrapper h2.title {
+/* --- Rename "Tickets" header to "Registrations" --- */
+bt-master-event-ui-tickets h2.title {
   font-size: 0 !important;
   color: transparent !important;
 }
-.tickets-wrapper h2.title::after {
-  content: "Registration";
-  font-size: 1.5rem;   /* adjust to match your theme */
+bt-master-event-ui-tickets h2.title::after {
+  content: "Registrations";
+  font-size: 1.5rem;
   color: inherit;
 }
 
 /* --- Hide ticket thumbnail subtitles --- */
-.tickets-wrapper div.ticket-type {
+bt-master-event-ui-tickets div.ticket-type {
   display: none !important;
 }
