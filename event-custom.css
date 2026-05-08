@@ -1,12 +1,16 @@
 /* --- Rename "Tickets" header to "Registrations" --- */
 bt-master-event-ui-tickets h2.title {
-  font-size: 0 !important;
-  color: transparent !important;
+  visibility: hidden !important;
+  position: relative !important;
 }
 bt-master-event-ui-tickets h2.title::after {
   content: "Registrations";
+  visibility: visible;
+  position: absolute;
+  left: 0;
   font-size: 1.5rem;
   color: inherit;
+  font-weight: inherit;
 }
 
 /* --- Hide ticket thumbnail subtitles --- */
